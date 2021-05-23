@@ -1,0 +1,9 @@
+{% extends "maths/base.html" %}
+
+{% block title %} Obliczenia {% endblock %}
+
+{% block content %}
+    {% for el in texty %}
+        <p>{{ el.operation }}</p>
+    {% endfor %}
+{% endblock %}
