@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
     'maths.apps.MathsConfig',
+    'books.apps.BooksConfig',
 ]
 
 MIDDLEWARE = [
