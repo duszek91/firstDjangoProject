@@ -2,6 +2,8 @@
 # https://stackoverflow.com/questions/33314717/how-to-understand-tornado-response-request-cycle-in-django
 from django.http import HttpResponseForbidden
 
+from django.utils import timezone
+
 
 def simple_middleware(get_response):
     # One-time configuration and initialization.
@@ -14,7 +16,6 @@ def simple_middleware(get_response):
 
         # Code to be executed for each request/response after
         # the view is called.
-        # return response
-        return HttpResponseForbidden("Brak dostępu")
-
+        return response
+        
     return middleware
