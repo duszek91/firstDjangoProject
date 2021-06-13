@@ -1,5 +1,5 @@
 
-## Fixtures
+stable/index.html## Fixtures
 
 https://docs.djangoproject.com/en/3.2/howto/initial-data/
 
@@ -15,4 +15,4 @@ class MyTestCase(TestCase):
 ## Factory boy
 
 
-https://factoryboy.readthedocs.io/en/stable/index.html
+https://factoryboy.readthedocs.io/en/

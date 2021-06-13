@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.template import Template, Context
 
+from .forms import MathForm
 from .models import Calculation
 # Create your views here.
 
@@ -18,8 +19,13 @@ def add(request, a, b):
     operation = 'add'
     result = a + b
 
+    form = MathForm()
+
+    x = request.POST.get('x')
+    y = request.POST.get('y')
+    print(x, y)
     return render(
         request,
         "maths/calculation.html",
-        {"result": result, 'operation': operation}
+        {"result": result, 'operation': operation, 'form': form}
     )
